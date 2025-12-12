@@ -1,0 +1,41 @@
+p {
+    font-family: "Anuphan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    margin: 5px;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+}
+.id {
+    display: flex;
+    flex-direction: column;
+}
+.student {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.score {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.bar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.data p {
+    font-size: 20px;
+}
+
+
+
+
