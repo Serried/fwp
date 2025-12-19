@@ -1,0 +1,28 @@
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Anuphan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#button {
+    font-family: "Anuphan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#random {
+    display: flex;
+    flex-direction: row;
+}
+
+#random img {
+    max-width: 50px;
+    height: auto;
+    margin: 5px;
+}
