@@ -13,6 +13,22 @@ function validateForm() {
         alert("Password must be longer than 8 characters.");
         return false;
     }
+    
+    if (password.search(/[0-9]/) == -1 ) {
+        alert("Password must contain at least one number.");
+        return false;
+    }
+
+    if (password.search(/[A-Z]/) == -1 ) {
+        alert("Password must contain at least one uppercase letter.");
+        return false;
+    }
+
+    if (password.search(/[!@#$%^&*(),.?":{}|<>]/) == -1 ) {
+        alert("Password must contain at least one special character.");
+        return false;
+    }
+
     if (password !== confirm) {
         alert("Password does not match.");
         return false;
