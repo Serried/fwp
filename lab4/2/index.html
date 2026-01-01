@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container"> 
+        <div class="input-group">    
+            <label id="label-name" for="name">ชื่อ:</label>
+            <input type="text" id="name">
+        </div>
+        <div class="input-group">    
+            <label id="label-surname" for="surname">นามสกุล:</label>
+            <input type="text" id="surname">
+        </div>
+        <div class="input-group">
+            <label id="label-countries" for="countries">ประเทศ:</label>
+            <select name="countries" id="countries"></select>
+        </div>
+        <button id="switch-button" onclick="switchLanguage()">เปลี่ยนเป็นภาษาอังกฤษ</button>
+    </div>
+</body>
+</html>

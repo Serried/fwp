@@ -1,0 +1,25 @@
+html {
+    font-family: "Anuphan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+  }
+ td, th{
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#submit {
+    font-family: "Anuphan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+}
+
+#number {
+    width: 100px;
+    height: auto;
+}

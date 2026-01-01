@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div id="header">
+        <h1>ตารางรายรับ-รายจ่าย</h1>
+        <h2>ยอดคงเหลือ</h2>
+        <h1 id="balance">0</h1>
+    </div>
+    <div id="container">
+        <input type="text" id="item" placeholder="รายการ">
+        <input type="number" id="amount" placeholder="จำนวน">
+        <select id="type">
+            <option value="income">รายรับ</option>
+            <option value="expense">รายจ่าย</option>
+        </select>
+        <input type="date" id="date">
+        <button id="add" onclick="addToTable()">เพิ่มรายการ</button>
+    </div>
+
+    <div id="result">
+        <table id="summary">
+            <tr>
+                <th>วันที่</th>
+                <th>รายการ</th>
+                <th>รายรับ</th>
+                <th>รายจ่าย</th>
+            </tr>
+        </table>
+    </div>
+
+    
+</body>
+</html>
