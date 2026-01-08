@@ -1,0 +1,45 @@
+html {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 16px;
+    max-width: 300px;
+    height: auto;
+}
+
+.card-hyperlink {
+    margin-top: auto;
+}
+
+
+.card-title {
+    font-size: 1.3em;
+    margin-bottom: 8px;
+}
+
+.card-description {
+    font-size: 16px;
+}
+
+.card-hyperlink {
+    margin-top: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+}

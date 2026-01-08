@@ -1,0 +1,33 @@
+html {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.cat-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cat-cards {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    max-width: 300px;
+    height: auto;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+@media screen and (max-width: 700px) {
+    .cat-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cat-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
