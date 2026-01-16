@@ -14,8 +14,8 @@ function displayResult(num) {
         op.textContent = `${num} × ${i}`;
         ans.textContent = num * i;
 
-        row.appendChild(op);
-        row.appendChild(ans);
+    row.appendChild(op);
+    row.appendChild(ans);
         table.appendChild(row);
     }
 }

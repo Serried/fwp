@@ -30,7 +30,7 @@ function addToTable() {
     row.appendChild(expenseCell);
     
     table.appendChild(row);
-    
+
     updateBalance();
     
     document.getElementById("item").value = "";
