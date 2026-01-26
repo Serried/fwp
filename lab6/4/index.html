@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Noto+Sans+Thai:wght@100..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>🎬 รายการภาพยนตร์/ซีรีส์โปรด</h1>
+    <div id="input_section">
+    <input type="text" id="movie_input" name="movie" placeholder="ชื่อภาพยนตร์หรือซีรีส์...">
+    <input type="submit" id="add" value="➕ เพิ่ม" onclick="addMovie()">
+    <button id="delete" onclick="deleteAll()">🗑️ ลบทั้งหมด</button>
+</div>
+    <div id="movie_list">
+    </div>
+</body>
+</html>

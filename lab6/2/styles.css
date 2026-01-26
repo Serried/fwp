@@ -1,0 +1,47 @@
+body {
+    font-family: "Anuphan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 250px;
+    height: auto;
+    text-align: left;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 8px #ddd;
+}
+
+.card > p {
+    margin: 5px;
+}
+
+.delete-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Anuphan", sans-serif;
+    font-weight: 400;
+    transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}

@@ -1,0 +1,61 @@
+body, input, button {
+    font-family: "Anuphan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#delete {
+    margin-top: 10px;
+    background-color: rgb(0, 106, 255);
+    color: white;
+    border-radius: 7px;
+    border: none;
+    height: 31px;
+    width: 125px;
+
+}
+
+#movie_input {
+    width: 400px;
+    height: 25px;
+}
+
+#add {
+    height: 31px;
+    width: 75px;
+    background-color: rgb(0, 106, 255);
+    color: white;
+    border-radius: 7px;
+    border: none;
+}
+
+#mov {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f1f0f0;
+    font-weight: 400;
+}
+
+#del {
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(249, 72, 72, 0.873);
+    color: white;
+    height: 30px;
+    width: 50px;
+}
