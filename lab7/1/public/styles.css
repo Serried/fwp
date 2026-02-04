@@ -1,0 +1,71 @@
+* {
+  font-family: "Anuphan", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#hero {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: darkslategray;
+    height: 50px;
+    align-items: center;
+}
+
+#left {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 10px;
+}
+
+a {
+    color: white;
+    text-decoration-line: none;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    width: 300px;
+    overflow: hidden;
+}
+
+#card > img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#card > #card-content {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    align-items: center;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+button {
+    background-color: rgb(34, 137, 34);
+    height: 40px;
+    width: auto;
+    border: none;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
