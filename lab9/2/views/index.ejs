@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Lab 9-2</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Noto+Sans+Thai:wght@100..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <h1>Questions</h1>
+    
+    <% data.forEach((i) => { %>
+        <div class="form-check">
+        <p>
+        <strong><%= i.QID %>. <%= i.Stem %></strong>    
+        </p>
+<div class="form-check">
+  <input class="form-check-input"
+         type="radio"
+         name="q<%= i.QID %>"
+         id="<%i.QID %>"
+         value="A"
+         <%= i.Correct === 'A' ? 'checked' : '' %>
+  <label class="form-check-label"><%= i.Alt_A %></label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input"
+         type="radio"
+         name="q<%= i.QID %>"
+         id="<%i.QID %>"
+         value="B"
+         <%= i.Correct === 'B' ? 'checked' : '' %>
+  <label class="form-check-label"><%= i.Alt_B %></label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input"
+         type="radio"
+         name="q<%= i.QID %>"
+         id="<%i.QID %>"
+         value="C"
+         <%= i.Correct === 'C' ? 'checked' : '' %>
+  <label class="form-check-label"><%= i.Alt_C %></label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input"
+         type="radio"
+         name="q<%= i.QID %>"
+         id="<%i.QID %>"
+
+         value="D"
+         <%= i.Correct === 'D' ? 'checked' : '' %>
+  <label class="form-check-label"><%= i.Alt_D %></label>
+</div>
+
+    <% }) %>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Noto+Sans+Thai:wght@100..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Show Data</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Phone</th>
+        </tr>
+        <% data.forEach((item)=>{ %>
+            <tr>
+                <td><%= item.username %></td>
+                <td><%= item.password %></td>
+                <td><%= item.email %></td>
+                <td><%= item.firstname %></td>
+                <td><%= item.lastname %></td>
+                <td><%= item.age %></td>
+                <td><%= item.address %></td>
+                <td><%= item.phone %></td>
+            </tr>
+        <% }); %>
+    </table>
+    <a href="/">Back</a>
+    <a href="/form">Go to form</a>
+</body>
+</html>

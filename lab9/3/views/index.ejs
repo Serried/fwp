@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Lab 9-3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Noto+Sans+Thai:wght@100..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<p>
+    <h1>📦️ ระบบติดตามคำสั่งซื้อ</h1>
+    <form action="/add" method="POST">
+        <input name="customer" id="customer" type="text" placeholder="ชื่อลูกค้า">
+        <input name="product" id="product" type="text" placeholder="รายการสินค้า">
+        <input name="address" id="address" type="text" placeholder="ที่อยู่">
+        <input name="contact" id="contact" type="text" placeholder="เบอร์โทร">
+        <input id="add" type="submit" value="เพิ่มคำสั่งซื้อ">
+    </form>
+    <div style="height: 1px; background-color:#ddd; margin: 20px;"></div>
+    <h2>รายการคำสั่งซื้อ</h2>
+    <table>
+    <tr>
+        <th>ID</th>
+        <th>ลูกค้า</th>
+        <th>สินค้า</th>
+        <th>สถานะ</th>
+        <th>เปลี่ยนสถานะ</th>
+    </tr>
+    <% data.forEach((i) => { %>
+    <tr>
+    <td><%= i.orderID %></td>
+    <td><%= i.customer %></td>
+    <td><%= i.product %></td>
+    <td> <%= i.status %> </td>
+    <td>
+        <form action="/update" method="POST">
+            <input type="hidden" name="orderID" value="<%= i.orderID %>">
+            <select id="status" name="status">
+                <option value="รอดำเนินการ" <%= i.status === "รอดำเนินการ" ? "selected" : "" %> >รอดำเนินการ</option>
+                <option value="กำลังจัดส่ง" <%= i.status === "กำลังจัดส่ง" ? "selected" : "" %>>กำลังจัดส่ง</option>
+                <option value="จัดส่งแล้ว" <%= i.status === "จัดส่งแล้ว" ? "selected" : "" %>>จัดส่งแล้ว</option>
+                <!-- <option >ยกเลิก</option> -->
+            </select>
+            <button id="update" type="submit">อัปเดต</button>
+        </form>
+    </td>
+
+    </tr>
+     <%}) %>
+    </table>
+    
+
+</body>
+</html>

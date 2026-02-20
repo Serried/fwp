@@ -1,0 +1,65 @@
+* {
+    font-family: "Anuphan", sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    gap: 10px;
+
+}
+
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    /* height: 263px; */
+}
+
+.card .cover {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.card .cover img {
+    width: 100%;
+    height: 263px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+    padding-left: 5px;
+}
+
+
+.card .content-title p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.3;
+
+}
+
+.card .content p {
+    margin: 0;
+    line-height: 1.4;
+    padding: 5px;
+}
+
+.card .content-details {
+    display: none;
+}
