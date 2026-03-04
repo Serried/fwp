@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Noto+Sans+Thai:wght@100..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="/">Menu</a>
+        <a href="/cart">Cart</a>
+    </nav>
+    <h1>AUNTIE-AUN Restaurant</h1>
+    <div class="container">
+        <% data.forEach((i) => { %>
+            <div class="card">
+                <img src="<%= i.image_url %>">
+                <div class="content">
+                <h3><%= i.name %></h3>
+                <p><%= i.description %></p>
+                <div class="bottom">
+                <p style="color: red;"><%= i.price %> THB</p>
+                <a href="/add/<%= i.product_id %>">
+                    <button>
+                    Add to Cart
+                </button>
+                </a>
+            </div>
+            </div>
+            </div>
+       <% }) %>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+<% let sum = 0 %>
+<h2>Your Cart</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Storage</th>
+            <th>Camera</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% data.forEach((item)=>{ %>
+            <% sum += item.price %>
+        <tr>
+            <td><%= item.id %></td>
+            <td><%= item.name %></td>
+            <td><%= item.price %></td>
+            <td><%= item.storage %></td>
+            <td><%= item.camera %></td>
+            <td>
+                <img src="http://webdev.it.kmitl.ac.th/phone-images/<%= item.pimage %>">
+            </td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
+<p style="margin: 10px;">Total: <%= sum %></p>
+
+<a href="/clear-cart" class="btn-clear">Clear Cart</a>
+<a href="/menu" class="btn-clear">Products</a>
+
+</body>
+</html>

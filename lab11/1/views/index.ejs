@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Noto+Sans+Thai:wght@100..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Employee Information</h1>
+    <form method="POST">
+        <label for="id">Employee ID:</label>
+        <input type="number" name="id" value="<%= data.CustomerId || '' %>">
+        <label for="first">Firstname:</label>
+        <input type="text" name="first" value="<%= data.FirstName || '' %>">
+        <label for="last">Lastname:</label>
+        <input type="text" name="last" value="<%= data.LastName || '' %>">
+        <label for="address">Address:</label>
+        <textarea name="address"><%= data.Address || '' %></textarea>
+        <label for="email">Email:</label>
+        <input type="text" name="email" value="<%= data.Email || '' %>">
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" value="<%= data.Phone || '' %>">
+        <div id="button">
+        <input type="submit" formaction="/set-cookie" value="Save Data"></input >
+        <input type="submit" formaction="/show-data" value="Show Data"></input >
+        <input type="submit" formaction="/clear-cookie" value="Clear Data"></input>
+    </div>
+    </form>
+</body>
+</html>

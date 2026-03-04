@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Noto+Sans+Thai:wght@100..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+    <a href="/">Menu</a>
+    <a href="/cart">Cart</a>
+    </nav>
+    
+    <h1>List of items</h1>
+    
+    <table>
+    
+    <tr>
+    <th>#</th>
+    <th>Item</th>
+    <th>Qty</th>
+    <th>Price</th>
+    </tr>
+    
+    <% foods.forEach((food, index) => { %>
+    
+    <tr>
+    <td><%= index + 1 %></td>
+    <td><%= food.name %></td>
+    <td>1</td>
+    <td><%= food.price %></td>
+    </tr>
+    
+    <% }) %>
+    
+    </table>
+    
+    <h2>Total: <%= total %> THB</h2>
+    
+    <form action="/checkout" method="POST">
+    <button>Confirm Order</button>
+    </form>
+    
+    </body>
+</html>

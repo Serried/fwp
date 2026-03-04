@@ -1,0 +1,22 @@
+* {
+    font-family: "Anuphan", sans-serif;
+}
+
+form > input, form > textarea {
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    width: 300px;
+}
+
+form {
+    font-size: 20px;
+}
+
+#button {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    gap: 5px;
+}
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phones</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <h2 class="logo">FWP Phone Store</h2>
+    </div>
+
+    <div class="nav-right">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/menu" class="nav-link">Menu</a>
+        <a href="/cart" class="nav-link">Cart</a>
+    </div>
+</nav>
+
+<div class="container">
+    <% data.forEach((item)=>{ %>
+        <div class="card">
+            <img src="http://webdev.it.kmitl.ac.th/phone-images/<%= item.pimage %>">
+            
+            <div class="card-body">
+                <div class="card-id">
+                    ID: <%= item.id %>
+                </div>
+                <div class="card-name">
+                    <%= item.name %>
+                </div>
+
+                <a href="/add-to-cart/<%= item.id %>" class="btn">
+                    Add to Cart
+                </a>
+            </div>
+        </div>
+    <% }); %>
+</div>
+
+</body>
+</html>
